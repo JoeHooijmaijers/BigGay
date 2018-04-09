@@ -1,0 +1,16 @@
+﻿@model RPGKillerApp.Models.BattleViewModel
+@{
+    
+    ViewBag.Title = "Play";
+}
+
+<h2>Play</h2>
+
+<h3 class="btn btn-lg btn-warning">@(Ajax.ActionLink("Start new fight", "Battle", new AjaxOptions()
+                                  { HttpMethod = "GET",
+                                  UpdateTargetId = "fightcontainer",
+                                  InsertionMode = InsertionMode.Replace}))</h3>
+
+<div id="fightcontainer">
+
+</div>

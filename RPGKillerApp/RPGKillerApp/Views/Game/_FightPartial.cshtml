@@ -1,0 +1,33 @@
+﻿@model RPGKillerApp.Models.BattleViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_FightPartial</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
+</head>
+<body>
+    <div>
+        <div class="flex-container" id="fightcontainer">
+            <div class="playercontainer">
+                <h4>@Html.DisplayFor(model => model.player.name)</h4>
+                <h4>@Html.DisplayFor(model => model.player.hp)</h4>
+                <h4>@Html.DisplayFor(model => model.player.atk)</h4>
+            </div>
+            <div class="FightBox">
+                <h3 class="btn btn-lg btn-danger">AA</h3>
+            </div>
+            <div class="enemycontainer">
+                <h4>@Html.DisplayFor(model => model.enemy.name)</h4>
+                <h4>@Html.DisplayFor(model => model.enemy.hp)</h4>
+                <h4>@Html.DisplayFor(model => model.enemy.atk)</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
